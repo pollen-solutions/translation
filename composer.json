@@ -1,0 +1,48 @@
+{
+  "name": "pollen-solutions/translation",
+  "description": "Pollen Solutions - Translation Component - Internationalization layer and utilities.",
+  "homepage": "https://www.presstify.com/pollen-solutions/translation/",
+  "keywords": [
+    "pollen-solutions",
+    "component",
+    "http",
+    "PSR-7"
+  ],
+  "time": "2021-08-11",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy@presstify.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "pollen-solutions/support": "^1.0",
+    "symfony/translation": "^5.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pollen\\Translation\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pollen\\Translation\\Test\\": "tests"
+    }
+  },
+  "suggest": {
+    "pollen-solutions/container" : "Pollen Container Component - PSR-11 ready Dependencies Injection Container",
+    "stichoza/google-translate-php" : "Free Google Translate API PHP Package"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
